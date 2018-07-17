@@ -1,10 +1,11 @@
 # Page settings
 
-baseurl = "http://andrew.newdigate.me/"
-languageCode = "en-us"
-title = "Andrew Newdigate CV"
+baseurl = "https://andrew.newdigate.me/"
+languageCode = "en-GB"
+title = "Andrew Newdigate"
 theme = "orbit"
 googleAnalytics = "UA-XXXXXXX-Y"
+publishDir = "docs"
 
 # Do not build files for websites. Need them? Set to false
 disableRSS = true

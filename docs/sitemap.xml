@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://andrew.newdigate.me/</loc>
+    <loc>https://andrew.newdigate.me/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://andrew.newdigate.me/categories/</loc>
+    <loc>https://andrew.newdigate.me/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://andrew.newdigate.me/tags/</loc>
+    <loc>https://andrew.newdigate.me/tags/</loc>
     <priority>0</priority>
   </url>
   
