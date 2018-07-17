@@ -1,0 +1,204 @@
+# Page settings
+
+baseurl = "http://andrew.newdigate.me/"
+languageCode = "en-us"
+title = "Andrew Newdigate CV"
+theme = "orbit"
+googleAnalytics = "UA-XXXXXXX-Y"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+[params]
+
+# Meta
+    description = "Hugo Responsive Resume/CV Theme for Developers"
+    author = "Pavel Kanyshev"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles-6.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Andrew Newdigate"
+        tagline = "Full Stack Developer"
+        avatar = "profile.jpg"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto:contact@newdigate.me"
+        title = "contact@newdigate.me"
+
+        [[params.contact.list]]
+        class = "phone"
+        icon = "fa-phone"
+        url = "tel:+447734216733"
+        title = "+447734216733"
+
+        [[params.contact.list]]
+        class = "twitter"
+        icon = "fa-twitter"
+        url = "https://twitter.com/suprememoocow"
+        title = "@suprememoocow"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "https://linkedin.com/in/andrewnewdigate"
+        title = "andrewnewdigate"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "https://github.com/suprememoocow"
+        title = "github/suprememoocow"
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "BSc in Computer Science"
+        college = "University of Cape Town"
+        dates = "1996 - 2000"
+
+    # Languages section
+    [params.language]
+        enable = true
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "English"
+        level = "Native"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = """
+Established engineering leader with 20 years experience in building and scaling web and mobile applications.
+"""
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experience"
+
+        [[params.jobs.list]]
+        position = "Infrastructure Architect"
+        dates = "June 2018 - Present"
+        company = "GitLab Inc."
+        details = """
+Focused on making GitLab.com the premier code hosting site, my role involves:
+
+* Identifying and document single-points-of-failure, scaling issues, reliability and performance issues in the GitLab.com fleet.
+* Work with the monitoring team, the production team and application development teams to improve the observability of the application, to improve the data we use to identify and prioritise issues and reduce the mean-time-to-detection on infrastructure issues.
+* Propose infrastructure changes to GitLab.com to address availability, performance and observability issues.
+* Work with engineering teams to identify and prioritise application changes that would improve the availability, scalability and performance of GitLab.com.
+* Work with stakeholders within the infrastructure group, across engineering, product and finance to build a roadmap.
+* Document the existing infrastructure of GitLab.com
+* Communicate about our infrastructure and roadmap within the company and externally through blog posts.
+
+Technologies used: Cloud: Google Cloud Platform. Infrastructure: Linux, Terraform, Kubernetes, Chef, Ansible. Languages: Golang, Ruby, Javascript. Observability: Prometheus, OpenTracing, Influxdb. Datastores: Postgres, Redis, ElasticSearch
+"""
+
+        [[params.jobs.list]]
+        position = "Interim Director of Infrastructure, GCP Migration Project Lead"
+        dates = "January 2018 - June 2018"
+        company = "GitLab Inc."
+        details = """
+Asked to step into this role while GitLab sourced a new Director of Infrastructure.
+
+While taking on this role, I continued to directly manage the Gitaly team, the Database Team, project manage GitLab's GCP Migration project, and continued to manage Gitter.
+
+* Worked with multiple engineering teams across the company to ensure the transition of GitLab.com from Azure cloud to Google Cloud platform.
+* Sourced, hired and managed three infrastructure teams (Production, Gitaly, Database) • Measure and improve the happiness and productivity of the team
+* Define the agile development and continuous delivery process
+* Drive quarterly OKRs (Objectives, Key-Results)
+* Work across sub-departments within engineering
+* Responsible for the quality, security, availability, reliability and performance of GitLab.com
+"""
+        [[params.jobs.list]]
+        position = "Git Infrastructure Lead"
+        dates = "January 2017 - June 2018"
+        company = "GitLab Inc."
+        details = """
+Team Lead on the Git Infrastructure team at GitLab, a focused team of seven engineers building the Gitaly service.
+
+Led the team from inception through to point at which Gitaly is handling thousands of Git operations per second across the GitLab.com fleet.
+
+* Defined the roadmap for Gitaly, tracked and published progress against the roadmap
+* Since this was a new team, established and iterated on an agile process for the team to work
+through
+* Established quality assurance and testing procedures for the team, rolled out feature flags for
+gradually ramping Gitaly usage up in our production environment
+* Focused on tracking down performance, scaling and availability issues with the new service * Worked with the team to establish a architecture for the product
+* Recruitment for the team
+Page 2
+* Leading GitLab's Gitaly project, a Git RPC service with the aim of improving the performance of GitLab.com and other large GitLab sites.
+* As part of GitLab's acquisition of Gitter, also led the effort to open-source the Gitter code-base.
+
+Technologies used: Golang, Ruby, Prometheus, Elasticsearch, git, libgit2, grpc
+"""
+
+        [[params.jobs.list]]
+        position = "Co-founder, CTO"
+        dates = "October 2012 - January 2017"
+        company = "Gitter"
+        details = """
+Gitter is a startup building a messaging product for developers. Acquired by GitLab in 2017. At last check, platform has over 1.2M RU, 800K monthly uniques.
+
+I lead a small team of engineers (started as 2, grew to 6) at Gitter to build an extensive product comprised of:
+
+* Web, mobile web, embedded plugin (sidecar)
+* Public API
+* IRC bridge
+* Web-hooks API
+* Public streaming and web-socket endpoints
+* Mobile applications for iOS and Android
+* Desktop applications for OSX, Linux, Windows
+* Various open source clients for Gitter, other projects
+
+As the CTO, responsible for:
+
+* Leading the technology roadmap of the company
+* Leading and implementing the architecture of our application software, cloud infrastructure and client applications.
+* Leading the engineering and devops teams
+* Capacity planning
+* Dealing with anything that is holding back team productivity (intra-personal conflicts, process problems, technical debt)
+
+Gitter is a modern cloud-based app built on universal/isomorphic Javascript using open source technologies, including:
+
+* Backend: node.js for web, api, websockets, linux & windows desktop apps
+* Frontend:  Marionette, lodash, Backbone, ReactJS, webpack, babel for bundling
+* Mobile: Android (Java) and iOS (Objective-C, Swift) Hybrid/Isomorphic Javascript
+* Peristence: MongoDB, Redis, ElasticSearch, Neo4j
+
+The small team size means we automate as much as possible, including provisioning, deployment and reliability operations using Ansible, Jenkins, monit, Datadog, PagerDuty, Nomad, Consul and others. In four years, we’ve had only a handful of self-inflicted outages and we each time we’ve made changes to mitigate the problem occurring again.
+
+Maintained a hands-on approach to leading the team: writing and reviewing code, profiling and correcting production performance issues, working alongside our devops engineer to build out the EC2-based infrastructure, dealing with PagerDuty alerts and anything else that you may encounter as an engineer working in a small startup.
+
+[Older experience details available from my LinkedIn profile...](https://www.linkedin.com/in/andrewnewdigate/)
+"""
